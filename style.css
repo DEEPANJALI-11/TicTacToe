@@ -1,0 +1,90 @@
+/* .body{
+    margin: 0px;
+    padding: 0px;
+} */
+
+.wrapper{
+    border:0;
+    width: 100vw;
+    height: 100vh;
+    background-image:url("https://img.freepik.com/premium-vector/violet-purple-white-watercolor-brush-paint-vector-stylized-striped-card-aquarelle-abstract-hand-drawn-paper-texture_548264-231.jpg");
+    background-size:cover;
+    background-position: center ;
+    display: grid;
+    place-items: center;
+    
+}
+.game-id{
+    /* border-radius: 4px; */
+    color:blueviolet;
+    position: absolute;
+    top:2rem;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding:0.5rem 3rem;
+    text-align: center;
+    opacity: .75;
+}
+.tic{
+    width:90%;
+    max-width: 20rem;
+    background-color: rgb(214, 200, 226);
+    border:1px;
+    border-radius: 2rem;
+    cursor:pointer;
+    padding:2rem;
+    margin-top: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr) ;
+    aspect-ratio:1/1;
+
+}
+.box{
+    position:relative;
+    width:100%;
+    aspect-ratio:1/1;
+    cursor: pointer;
+    font-size:3rem;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    
+}
+.box1,.box2,.box4,.box5{
+    border-right:2px solid white;
+    border-bottom:2px solid white;
+}
+.box3,.box6{
+    border-bottom: 2px solid white;
+}
+.box7,.box8{
+    border-right:2px solid white;
+}
+.newgame{
+    border-color: white;;
+    color:rgb(183, 138, 226);
+    position:absolute;
+    bottom:3rem;
+    left:50%;
+    transform:translatex(-50%);
+    padding:0.5rem 2rem;
+    /* display: none; */
+    border-radius: 5rem;
+    cursor:pointer;
+}
+.newgame.active{
+    display: flex;
+}
+.win{
+    background-color: green;
+}
+.btn{
+    opacity: .75;
+    border-radius: 5px;
+    border-color: aliceblue;
+}
